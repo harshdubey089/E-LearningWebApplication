@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Webpage Design</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .myname {
+        position: relative;
+        left: 95px;
+        top: 128px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size:3.4rem;
+      text-shadow: -1px 1px 0 white,
+            1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+    /* z-index: 24; */
+    color:orangered;
+    }
+
+    .change_content::after {
+        content: "";
+        animation: hello 4s infinite linear;
+    }
+
+    .change_content {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        /* font-size: 1rem; */
+        z-index: 12;
+        text-shadow: -1px 2px 0 white,
+            2px 2px 0 white,
+            2px -1px 0 white,
+            -1px -1px 0 white;
+    }
+
+    @keyframes hello {
+        0% {
+            content: "Web ";
+            color: purple;
+            font-size: 2rem;
+        }
+
+        25% {
+            content: "Android";
+            color: purple;
+            font-size: 2rem;
+        }
+
+        50% {
+            content: "Data Scientist";
+            color: purple;
+            font-size:2rem;
+        }
+
+        70% {
+            content: "Web3 Development";
+            color: purple;
+            font-size: 2rem;
+        }
+
+        90% {
+            content: "Frontend and Backend ";
+            color: purple;
+            font-size: 2rem;
+        }
+
+        100% {
+            /* content: "More"; */
+            content: "Harsh_Dubey";
+            color: purple;
+            font-size:2rem;
+        }
+    }
+
+
+    .navbar {
+        width: 1200px;
+        height: 75px;
+        margin: auto;
+    }
+
+    .icon {
+        width: 200px;
+        float: left;
+        height: 70px;
+    }
+
+    .logo {
+        color: orangered;
+        text-shadow: -1px 1px 0 white,
+            1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+
+        font-size: 45px;
+        font-family: monospace;
+        padding-left: 20px;
+        float: left;
+        padding-top: 10px;
+        margin-top: 9px
+    }
+
+    .menu {
+        width: 400px;
+        float: left;
+        height: 70px;
+    }
+
+    ul {
+        /* color: black; */
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li {
+        list-style: none;
+        margin-left: 62px;
+        margin-top: 27px;
+        font-size: 14px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: brown;
+        font-family: sans-serif;
+        font-size: 21px;
+        transition: 0.4s ease-in-out;
+    }
+
+    ul li a:hover {
+        /* position:absolute/; */
+        text-decoration: brown underline;
+
+
+    }
+
+    /* ul li a:hover{
+    color:purple;
+} */
+
+    .search {
+        width: 330px;
+        float: left;
+        margin-left: 270px;
+    }
+
+    .srch {
+        font-family: 'Times New Roman';
+        width: 200px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid rgb(205, 82, 205);
+        ;
+        border-radius:20px ;
+        margin-top: 13px;
+        color: purple;
+        border-right: none;
+        font-size: 16px;
+        float: left;
+        padding: 10px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .btn {
+        width: 100px;
+        height: 40px;
+        background: rgb(205, 82, 205);
+        border: 2px solid rgb(205, 82, 205);
+        border-radius: 20px;
+        margin-top: 13px;
+        color: white;
+        font-size: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: 0.2s ease;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background:orangered;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .btn:focus {
+        outline: none;
+    }
+
+    .srch:focus {
+        outline: none;
+    }
+
+    .content {
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        margin-top: 9px;
+        color: black;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .content .par {
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family: Arial;
+        letter-spacing: 1.2px;
+        line-height: 30px;
+    }
+
+    .content h1 {
+        font-family: 'Times New Roman';
+        font-size: 40px;
+        padding-left: 20px;
+        margin-top: 9%;
+        letter-spacing: 2px;
+    }
+
+    .content .cn {
+        width: 160px;
+        height: 40px;
+        background: rgb(205, 82, 205);
+        ;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .4s ease;
+
+    }
+
+    .content .cn a {
+        text-decoration: none;
+        color: white;
+        transition: .3s ease;
+    }
+
+    .cn:hover {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+    }
+
+    .content span {
+        color: purple;
+        font-size: 65px
+    }
+
+    .form {
+        position: relative;
+        width: 250px;
+        height: 380px;
+        border: 2px dotted orangered;
+        /* background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%); */
+        position: absolute;
+        top: -35px;
+        left: 870px;
+        transform: translate(0%, -5%);
+        border-radius: 10px;
+        padding: 25px;
+    }
+
+    .form h2 {
+        width: 220px;
+        font-family: Arial;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+        background-color: orangered;
+        border-radius: 10px;
+        margin: 2px;
+        padding: 8px;
+        /* text-shadow: -1px 1px 0 white,
+      1px 1px 0 white,
+      1px -1px 0 white,
+      -1px -1px 0 white;
+  */
+    }
+
+    .form input {
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid rgb(205, 82, 205);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+    }
+
+    .form input:focus {
+        outline: none;
+    }
+
+    ::placeholder {
+        color: white;
+        font-family: Arial;
+    }
+
+    .btnn {
+        width: 240px;
+        height: 40px;
+        background: rgb(174, 27, 174);
+        border: none;
+        margin-top: 30px;
+        font-size: 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        color: purple;
+        transition: 0.4s ease;
+    }
+
+    .btnn:hover {
+        background:blue;
+        color: white;
+        font-weight: bold;
+    }
+
+    .btnn a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .form .link {
+        font-family: sans-serif;
+        font-size: 17px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .pk {
+        color: orangered;
+    }
+
+    .pk:hover {
+        font-size: 16px;
+
+        text-decoration: underline dotted white;
+    }
+
+    .form .link a {
+        text-decoration: none;
+        color: orangered;
+        font-weight: bold;
+    }
+
+    .liw {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .icons a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .bg {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.52;
+    }
+
+    .link {
+        color: purple;
+    }
+
+    .icons ion-icon {
+        color: black;
+        font-size: 30px;
+        padding-left: 14px;
+        padding-top: 5px;
+        transition: 0.3s ease;
+    }
+
+    .icons ion-icon:hover {
+        color: blue;
+    }
+
+    .liw {
+        color: purple;
+    }
+
+    img {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 700px;
+        z-index: -1;
+        opacity: 0.98;
+
+    }
+    .change_contents{
+        position: relative;
+        left: -50px;
+    }
+    .change_contents::after {
+        content: "";
+        animation: hellos 4s infinite linear;
+    }
+
+    @keyframes hellos {
+        0% {
+            content: "CodeField";
+            color: orangered;
+        text-shadow: -1px 1px 0 white,
+            1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+
+        font-size: 45px;
+        font-family: monospace;
+        padding-left: 20px;
+        float: left;
+        padding-top: 10px;
+        margin-top: 9px
+        }
+
+        25% {
+
+            content: "CodeField";
+            color: rgb(255, 0, 191);
+            /* color:rangered; */
+        text-shadow: -1px 1px 0 white,
+            1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+
+        font-size: 45px;
+        font-family: monospace;
+        padding-left: 20px;
+        float: left;
+        padding-top: 10px;
+        margin-top: 9px }
+
+        50% {
+            content: "CodeField";
+            color: rgb(228, 228, 81);
+            /* color: orangered; */
+        text-shadow: -1px 1px 0 white,
+            1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+
+        font-size: 45px;
+        font-family: monospace;
+        padding-left: 20px;
+        float: left;
+        padding-top: 10px;
+        margin-top: 9px }
+
+        70% {
+            content: "CodeField";
+            color: rgb(138, 24, 24);
+        text-shadow: -1px 1px 0 white,
+            1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+
+        font-size: 45px;
+        font-family: monospace;
+        padding-left: 20px;
+        float: left;
+        padding-top: 10px;
+        margin-top: 9px 113, 117;
+        }
+
+        90% {
+            content: "CodeField";
+            color: rgb(53, 118, 127);
+            /* color: orangered; */
+        text-shadow: -1px 1px 0 white,
+            1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+
+        font-size: 45px;
+        font-family: monospace;
+        padding-left: 20px;
+        float: left;
+        padding-top: 10px;
+        margin-top: 9px }
+
+        100% {
+            content: "CodeField";
+            color: rgb(202, 37, 12);
+            /* color: orangered; */
+        text-shadow: -1px 1px 0 white,
+            1px 1px 0 white,
+            1px -1px 0 white,
+            -1px -1px 0 white;
+
+        font-size: 45px;
+        font-family: monospace;
+        padding-left: 20px;
+        float: left;
+        padding-top: 10px;
+        margin-top: 9px }
+
+    }
+
+</style>
+
+<body>
+    <img src="C:\Users\lenovo\Downloads\img\bgm.png" alt="loading failed">
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <!-- <h2 class="logo">CodeField</h2> -->
+                <main>
+                    <section>
+                        <h3><span class="change_contents"></span></h3>
+                    </section>
+                </main>
+                
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div>
+        <h1 class="myname">Harsh_Dubey</h1>
+        <div class="content">
+            <section>
+                <!-- <h1 class="myname">Harsh_Dubey</h1> -->
+                <h1><span class="change_content"></span></h1>
+            </section>
+            <!-- <h1>Web Design & <br><span>Development</span> <br>Course</h1> -->
+            <p class="par">Wellcome To my codeField Website. The main of preparing <br> this website is that user &
+                Student <br>
+                can get lot of study materials which are totaly free <br>
+                Here in this Website you <br> wll get lot of Developmnt , Data Scientist and much more resources..</p>
+
+            <button class="cn"><a href="project.html">Join Us</a></button>
+
+            <div class="form">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="" placeholder="Enter Password Here">
+                <button class="btnn"><a href="project.html">Log in</a></button>
+
+                <p class="link">Don't have an account<br>
+                    <a href="#" class="pk">Sign up </a> here</a>
+                </p>
+                <p class="liw">Log in with</p>
+
+                <div class="icons">
+                    <a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-skype"></ion-icon>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
