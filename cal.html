@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .bg {
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .harsh {
+        padding: 34px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        max-width: 80%;
+    }
+
+    .button {
+        width: 76px;
+        padding: 20px;
+        margin: 0 3px;
+        font-size: 1.5rem;
+        border: 2px solid black;
+        border-radius: 14px;
+        cursor: pointer;
+        background-color: black;
+        opacity: 0.78;
+    }
+   
+   
+    .cols {
+        color: white;
+    }
+
+    .col {
+        background-color: orange;
+    }
+
+    .word {
+        color: orange;
+    }
+
+    .row  {
+        margin: 14px 4px;
+       }
+    
+    .row input {
+        width: 340px;
+        font-size: 20px;
+        margin: 0;
+        padding: 10px 5px;
+        border: 1px solid black;
+        border-radius: 20px;
+        /* position: relative; */
+        
+    }
+
+    .text-center {
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+        color: white;
+    }
+
+    .bg-red {
+        background-color: red;
+    }
+
+    .max {
+        margin: auto;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flex-col {
+        flex-direction: column;
+    }
+
+    .item-center {
+        align-items: center;
+    }
+</style>
+
+<body>
+    <!-- <img class="bg" src="https://source.unsplash.com/1400x800/?laptop" alt="Calculator"> -->
+    <img src="C:\Users\lenovo\Downloads\h.jpeg" alt="" class="bg">
+    <div class="container">
+
+        <div class="harsh">
+            <h1 class="text-center">Calculator</h1>
+            <div class="container flex flex-col item-center max m-w-20">
+                <div class="row">
+                    <input class="input" type="search">
+                </div>
+                <div class="make">
+                    <div class="row">
+                    <button class="button word">C</button>
+                    <button class="button word">%</button>
+                    <button class="button word">M+</button>
+                    <button class="button word">M-</button>
+                </div>
+
+                <div class="row">
+                    <button class="button cols">7</button>
+                    <button class="button cols">8</button>
+                    <button class="button cols">9</button>
+                    <button class="button cols">+</button>
+                </div>
+
+                <div class="row">
+                    <button class="button cols">4</button>
+                    <button class="button cols">5</button>
+                    <button class=" button cols">6</button>
+                    <button class="button cols">-</button>
+                </div>
+
+                <div class="row">
+                    <button class="button cols">1</button>
+                    <button class="button cols">2</button>
+                    <button class="button cols">3</button>
+                    <button class="button cols">*</button>
+                </div>
+
+                <div class="row">
+                    <button class="button cols">0</button>
+                    <button class="button cols">.</button>
+                    <button class="button cols">/</button>
+                    <button class="button col">=</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let string = "";
+        let buttons = document.querySelectorAll('.button');
+        Array.from(buttons).forEach((button) => {
+            button.addEventListener('click', (e) => {
+                if (e.target.innerHTML == '=') {
+                    string = eval(string);
+                    document.querySelector('input').value = string;
+                }
+                else if (e.target.innerHTML == 'C') {
+                    string = "";
+                    document.querySelector('input').value = string;
+                }
+                else {
+                    console.log(e.target);
+                    string = string + e.target.innerHTML;
+                    document.querySelector('input').value = string;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  .change_content::after {
+    content: "";
+    animation: hello 4s infinite linear;
+  }
+
+  .carousel-item img {
+    width: 600px;
+    height: 570px;
+    color: black;
+  }
+
+  .change_content {
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.2rem;
+    z-index: 12;
+    text-shadow: -1px 1px 0 #000,
+      1px 1px 0 #000,
+      1px -1px 0 #000,
+      -1px -1px 0 #000;
+  }
+
+  @keyframes hello {
+    0% {
+      content: "Aim to reach you on your Aim";
+      color: rgb(246, 96, 176);
+  }
+
+    25% {
+      content: "Much more Development Resources";
+      color: cyan;
+    }
+
+    50% {
+      content: "Data Scientist proper guide Notes";
+      color: rgb(228, 228, 81);
+    }
+
+    70% {
+      content: "Web3 Development Basic to higher study";
+      color: rgb(25, 246, 25);
+    }
+
+    90% {
+      content: "Frontend and Backend program...";
+      color: white;
+    }
+
+    100% {
+      content: "Here you get lot of CS study material";
+      color: orange;
+    }
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
+  .vd{
+    margin-top: 30px;
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: bold;
+   font-family: verdana;
+   color: gray;
+  }
+  .shadow {
+    text-shadow: -1px 1px 0 white,
+      1px 1px 0 white,
+      1px -1px 0 white,
+      -1px -1px 0 white;
+  }
+
+  button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  li:hover {
+    text-decoration: white underline;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color:white;">
+        <h1 style="  text-shadow: -1px 2px 0  orangered,
+        2px 2px 0 orangered,
+        2px -1px 0  orangered,
+        -1px -1px 0  orangered;
+">Code<span style="color: orangered; font-family:'Courier New', Courier, monospace;   text-shadow: -1px 1px 0 white,
+          1px 1px 0 white,
+          1px -1px 0 white,
+          -1px -1px 0 white;
+">Field</span></h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color:white;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="glob.html" style="color:white;">About</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="info.html" style="color:white;">
+              Details
+            </a> -->
+          <li class="nav-item">
+            <a class="nav-link" href="information.html" style="color:white;">Details</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle bg-primary" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              More..
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#"><iframe width="600" height="315"
+                    src="https://www.youtube.com/embed/ZPioJpGtDPY" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></a>
+
+              </li>
+              <li><a class="dropdown-item" href="#"><iframe width="600" height="315"
+                    src="https://www.youtube.com/embed/0GD66xwu6j8" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="project2.html" style="color:white;">Home</a></li>
+            <li><a class="dropdown-item" href="#" style="color:white;">Contact Us</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#" style="color:white;">Something else here</a></li>
+          </ul>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" style="color:white;">Disabled</a>
+          </li> -->
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" style="color:black;" aria-label="Search">
+          <button class="btn btn-success" type="submit" style="color:black;">Search</button>
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignupModal">Signup</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="cal"><a
+              href="cal.html">Calculator</a></button>
+        </div>
+      </div>
+  </nav>
+
+  <!-- Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">
+  Launch demo modal -->
+  <!-- </button> -->
+
+  <!-- Log in -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Log in</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SIGN UP -->
+  <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignupModalLabel">Log in</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Enter Name </label>
+              <input type="text" class="form-control" placeholder="Enter your full name" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Qualification</label>
+              <input type="text" class="form-control" placeholder="Enter your Higher Qualifcation"
+                id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Passed Out Date</label>
+              <input type="date" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- <img src="https://source.unsplash.com/1400x2500/?coding" alt=""> -->
+        <img src="https://source.unsplash.com/1400x1900/?code,technology" class=" d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="color:blue;" class="shadow">Information-Technology</h1>
+          <!-- <h5>Wellcome to codeField here...</h5> -->
+          <main>
+            <section>
+              <h3><span class="change_content"></span></h3>
+            </section>
+          </main>
+          <button class="btn btn-danger">Technology</button>
+          <button class="btn btn-primary">Web development</button>
+          <button class="btn btn-success">Android development</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- <img src="C:\Users\lenovo\Downloads\img\and.png" class="d-block w-100" alt="..."> -->
+        <img src="https://source.unsplash.com/1400x1900/?code,programming" class=" d-block w-100" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="color:orangered;" class="shadow">Android-Development</h1>
+          <main>
+            <section>
+              <h3><span class="change_content"></span></h3>
+            </section>
+          </main>
+          <button class="btn btn-danger">Technology</button>
+          <button class="btn btn-primary">Web development</button>
+          <button class="btn btn-success">Android development</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <!-- <img src="C:\Users\lenovo\Downloads\img\wd.png" class="d-block w-100" alt="..."> -->
+        <img src="https://source.unsplash.com/1400x1900/?code,coding" class=" d-block w-100" alt="...">
+
+        <div class="carousel-caption d-none d-md-block">
+          <h1 style="color:orangered;" class="shadow">Web_Designing</a></h1>
+          <main>
+            <section>
+              <h3><span class="change_content"></span></h3>
+            </section>
+          </main>
+          <button class="btn btn-danger">Technology</button>
+          <button class="btn btn-primary">Web development</button>
+          <button class="btn btn-success">Android development</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="grid1">
+  </div>
+  <br>
+  <div class="album py-3 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="https://source.unsplash.com/219.33x225/?code,Programming"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+     -->
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="https://source.unsplash.com/1400x500/?code,Web3" alt="">
+            <div class="card-body">
+              <p class="card-text">Web Designing</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="web.html"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="https://source.unsplash.com/1400x500/?Design" alt="">
+            <div class="card-body">
+              <p class="card-text">Learn Designing</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="learn.html"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="https://source.unsplash.com/1400x500/?telephone" alt="">
+            <div class="card-body">
+              <p class="card-text">Global Conference...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="glob.html"><button type="button" class="btn btn-sm btn-outline-primary ">view</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="https://source.unsplash.com/1400x500/?technology" alt="">
+            <div class="card-body">
+              <p class="card-text">Information Technology</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="information.html"><button type="button"
+                      class="btn btn-sm btn-outline-primary">View</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="https://source.unsplash.com/1400x500/?code,Android" alt="">
+            <div class="card-body">
+              <p class="card-text">Android development</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="android.html"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+            <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+              src="https://source.unsplash.com/1400x1900/?code,coding,technology" alt="">
+            <div class="card-body">
+              <p class="card-text">Technology About Future.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="about.html"><button type="button" class="btn btn-sm btn-outline-primary">View</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="col-lg-4">
+
+
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="harsh.jpg.jpg -->
+          <!-- " role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="harsh.jpg.jpg"></rect><text x="50%" y="50%" fill="harsh.jpg.jpg" dy=".3em">140x140</text></svg> -->
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="https://source.unsplash.com/140x140/?book" alt="">
+          <h2 class="fw-normal">Learn Web</h2>
+          <p>Some representative web development Resources for aim to help all the willings student.This website is
+            surround huge of skill for differ stream of student also...</p>
+          <p><a class="btn btn-primary" href="web.html">View details »</a></p>
+        </div>
+        <div class="col-lg-4">
+
+
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="harsh.jpg.jpg -->
+          <!-- " role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="harsh.jpg.jpg"></rect><text x="50%" y="50%" fill="harsh.jpg.jpg" dy=".3em">140x140</text></svg> -->
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="https://source.unsplash.com/140x140/?phone" alt="">
+          <h2 class="fw-normal">Learn Android</h2>
+          <p>In this frane you will find more resources for you Android develpment career.For reach your Android
+            development career on peek point ,then this website will you for done this efficiently...</p>
+          <p><a class="btn btn-primary" href="android.html">View details »</a></p>
+        </div>
+        <div class="col-lg-4">
+
+
+          <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="harsh.jpg.jpg -->
+          <!-- " role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="harsh.jpg.jpg"></rect><text x="50%" y="50%" fill="harsh.jpg.jpg" dy=".3em">140x140</text></svg> -->
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140"
+            src="https://source.unsplash.com/140x140/?book" alt="">
+          <h2 class="fw-normal">Learn More..</h2>
+          <p>Here you will get much more resources for increase you skill label.kindly check out this website properly
+            enjoing this website .Much more development guidness will also be available here..</p>
+          <p><a class="btn btn-primary" href="learn.html">View details »</a></p>
+        </div>
+      </div>
+       <div class="vd">Lot of videoes you will get lot of videoes</div>
+      <div class="album py-3 bg-light">
+        <div class="container">
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="https://source.unsplash.com/219.33x225/?code,Programming"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+         -->
+                <iframe width="350" height="225" src="https://www.youtube.com/embed/tTaZy1hKAG0"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <div class="card-body">
+                  <p class="card-text">Gboard Keyboard tips & tricks.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <iframe width="350" height="225" src="https://www.youtube.com/embed/I5KcDJWkGDQ"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <div class="card-body">
+                  <p class="card-text">Whatsapp group se add hone se bachee.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+
+                <iframe width="350" height="225" src="https://www.youtube.com/embed/RXUTEk-p-HA"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+
+                <div class="card-body">
+                  <p class="card-text">How to fixed your phone Speaker.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-primary ">view</a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <iframe width="350" height="225" src="https://www.youtube.com/embed/NhkHt7dMFIA"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <div class="card-body">
+                  <p class="card-text">Useful Mobile Apps</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <iframe width="350" height="225" src="https://www.youtube.com/embed/DD6AWxuz-80"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <div class="card-body">
+                  <p class="card-text">Save mobile data & battery Consumption.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+                <iframe width="350" height="225" src="https://www.youtube.com/embed/VZ1W1m8giSA"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+                <div class="card-body">
+                  <p class="card-text">What is Refferal code & Refferal link.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-lg-4">
+            </div>
+          </div>
+          <main>
+            <footer class="py-5">
+              <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Section</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Link</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="www.google.com" class="nav-link p-0 text-muted">Google</a></li>
+                    <li class="nav-item mb-2"><a href="www.facebook.com" class="nav-link p-0 text-muted">Facebook</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="www.instagram.com" class="nav-link p-0 text-muted">Instagram</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+
+
+                <div class="col-6 col-md-2 mb-3">
+                  <h5>Details</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contribution</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Faculty</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Collage</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Teaching</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-5 offset-6">
+                  <form>
+                    <h5>Subscribe to our newsletter</h5>
+                    <p>Monthly digest of what's new and exciting from us.</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                      <label for="newsletter1" class="visually-hidden">Email address</label>
+                      <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                      <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <br>
+              <br>
+              <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2022 Company by @harsh_dubey, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#twitter"></use>
+                      </svg></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#instagram"></use>
+                      </svg></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                        <use xlink:href="#facebook"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </footer>
+          </main>
+          <!-- </div> -->
+</body>
+
+</html>
